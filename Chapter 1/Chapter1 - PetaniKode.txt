@@ -1,0 +1,86 @@
+1 - Apa itu OOP
+
+Pemrograman berorientasi objek merupakan paradigma
+ pemrograman berdasarkan konsep "objek", yang dapat berisi data, 
+dalam bentuk field atau dikenal juga sebagai atribut; serta kode,
+ dalam bentuk fungsi/prosedur atau dikenal juga sebagai method.
+
+class adalah rancangan atau blue print dari sebuah objek.
+Objek adalah sebuah variabel yang merupakan instance atau perwujudan dari Class.
+
+Class berisi definisi variabel dan fungsi yang menggambarkan sebuah objek.
+Dalam OOP,
+Variabel disebut atribut atau properti, Fungsi disebut method.
+
+Contoh Class
+
+class NamaClass {
+	String atribut1;
+	String atribut2;
+
+	void namaMethod(){
+		.....
+	}
+	
+	void namaMethodLain(){
+		....
+	}
+}
+
+Lalu, kita biasanya membuat objek (instance) dengan cara
+NamaClass namaObj = new NamaClass();
+
+Kata kunci new berfungsi untuk membuat objek baru dari class tertentu.
+
+Setelah membuat objek, kita bisa mengakses atribut dan method dari objek tersebut.
+
+Contoh:
+
+namaObj.namaMethod();
+namaObj.atribut1;
+
+Tanda titik berfungsi untuk mengakses atribut dan method.
+
+Bagaimana menentukan atribut dan method dari objek?
+
+Kuncinya: Atribut itu seperti ciri ciri dari objek.
+Method itu seperti tingkah laku atau operasi.
+
+Contoh, misal class Senjata
+
+ciri ciri senjata apa aja? (atribut)
+jumlah peluru, jenis, nama senjata, berat, warna, dan lain lain.
+
+Tingkah operasi? (fungsi)
+
+tembak(), lempar(), kurangiPeluru(), reload(), dll.
+
+implementasinya,
+
+class Senjata {
+	//atribut
+	String nama;
+	int jumlahPeluru;
+
+	//method
+	void tembak(){
+		jumlahPeluru--;
+	}
+
+	void reload(){
+		jumlahPeluru = 300;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

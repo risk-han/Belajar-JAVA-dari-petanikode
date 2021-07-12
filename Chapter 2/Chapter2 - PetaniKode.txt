@@ -1,0 +1,90 @@
+Inheritance dan Method Overriding
+
+Class atau Objek bisa saling berhubungan dengan class yang lain.
+Salah satu bentuk hubungannya adalah inheritance (pewarisan).
+Hubungan ini seperti hubungan keluarga antara orang tua dan anak.
+
+misalnya, ada 3 kelas,
+Gitar, bass, piano
+
+class Gitar {
+	String merk;
+	int harga
+	
+	void petik(){
+		...
+	}
+	
+	void genjreng(){
+		...
+	}
+	void tap(){
+		...
+	}
+	
+}
+
+class Bass {
+	String merk;
+	int harga;
+
+	void slap(){
+		...
+	}
+
+	void tap(){
+		...
+	}
+
+}
+
+class Piano {
+	String merk;
+	int harga;
+	
+	void tap(){
+		....
+	}
+}
+
+Dari ketiga class tersebut, method tap ditulis sebanyak 3 kali,
+dimana ini kurang efektif. Atributnya juga sama.
+Maka class Gitar, bass, dan piano dapat digeneralisasi.
+Pada class anak, kita menggunakan kata kunci extends untuk menyatakan kalau dia
+adalah turunan dari class induk.
+
+class alatMusik {
+	String merk;
+	int harga;
+
+	void tap(){
+	System.out.println("Ceritanya suaranya keluar");
+	}
+}
+
+class Guitar extends alatMusik {
+	void petik(){
+	System.out.println("Ceritanya suaranya keluar");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

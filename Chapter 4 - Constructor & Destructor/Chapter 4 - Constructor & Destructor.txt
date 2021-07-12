@@ -1,0 +1,8 @@
+Constructor
+=> method khusus yang akan dieksekusi pada saat pembuatan objek(instance)
+biasanya method ini digunakan untuk inisialisasi atau mempersiapkan
+data untuk objek.
+
+Destructor
+Destructor adalah method khusus yang akan dieksekusi saat objek
+dihapus dari memori

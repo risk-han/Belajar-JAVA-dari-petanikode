@@ -1,0 +1,149 @@
+Prosedur, Fungsi dan Method
+
+Prosedur, Fungsi dan Method itu sama.
+
+Prosedur => sebutan untuk fungsi yang tidak mengembalikan nilai, biasanya ditandai
+kata kunci void
+
+Fungsi => Sebutan untuk fungsi yang mengembalikan nilai.
+
+Method => Fungsi yang berada dalam Class, biasanya digunakan pada OOP.
+
+Fungsi harus dibuat atau ditulis di dalam class.
+
+Static TypeDataKembalian namaFungsi(){
+	//Statement atau kode fungsi
+}
+
+kata kunci static, artinya kita membuat fungsi yang dapat dipanggil tanpa harus
+membuat instansiasi objek.
+
+TypeDataKembalian, tipe data dari nilai yang akan di return.
+
+namaFungsi(), nama fungsinya.
+
+Contoh
+
+static void ucapSalam(){
+	System.out.println("Selamat Pagi");
+}
+
+Tipe data void artinya kosong, fungsi tersebut tidak mengembalikan nilai apa apa.
+
+Untuk memanggil fungsi, tinggal ketik
+ucapSalam();
+
+Fungsi dengan Parameter
+
+Parameter adalah variabel yang menampung nilai untuk diproses di dalam fungsi. Parameter
+berperan sebagai input untuk fungsi.
+
+Struktur dasarnya Seperti,
+
+static TipeData namaFungsi(TipeData namaParameter, TipeData namaParameterlain){
+	//kode fungsi
+}
+
+parameter ditulis diantara tanda kurung, parameter harus diberikan tipe data.
+bila terdapat lebih dari satu parameter, maka dipisah dengan tanda koma.
+
+contoh
+
+static void ucapin(String ucapan){
+	System.out.println(ucapan);
+}
+
+Cara pemanggilan fungsi yang memiliki parameter
+
+ucapin("Hallo!");
+
+
+Fungsi yang mengembalikan nilai
+
+static int luasPersegi(int sisi){
+	int luas = sisi * sisi;
+	return luas;
+}
+
+parameter bernama sisi, fungsi akan mengembalikan nilai dengan tipe int dari variabel luas.
+
+pemanggilannya:
+
+System.out.println("Luas persegi dengan panjang sisi 5 adalah " + luasPersegi(5));
+
+output : Luas persegi dengan panjang sisi 5 adalah 25
+
+Fungsi Static dan Non-Static
+
+Kata kunci static akan membuat fungsi dapat dieksekusi langsung tanpa harus
+membuat instansiasi objek dari class.
+
+Variabel Global dan Variabel Lokal pada Java
+
+Variabel global adalah variabel yang bisa diakses dari semua fungsi.
+Sedangkan variabel lokal adalah variabel yang hanya bisa diakses dari dalam fungsi
+tempat variabel itu berada.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

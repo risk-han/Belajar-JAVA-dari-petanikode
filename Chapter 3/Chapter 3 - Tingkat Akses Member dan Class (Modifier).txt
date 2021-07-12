@@ -1,0 +1,138 @@
+Modifier => penentu batasan akses member dan class dalam Java
+
+Ada 3 macam modifier
+
+public, private, protected
+
+1. Public (+)
+modifier public akan membuat member dan class bisa di akses dari mana saja
+
+contoh
+
+Package modifier;
+
+class Person {
+	public String name;
+	
+	public changeName(String newName){
+		this.name = newName;
+	}
+}
+
+pada class person, terdapat dua member,
+1. atribut name
+2. method changeName(),
+keduanya bisa diakses darimana saja
+
+namun, class person, tidak ada modifier, maka class
+tersebut tidak akan bisa diakses dari luar package
+
+pada class diagram, modifier public digambarkan dengan simbol plus(+)
+
+
+2. Private (-) 
+
+modifier private akan membuat member hanya bisa diakses oleh dari dalam class
+itu sendiri.
+
+Modifier private tidak bisa diberikan kepada class, enum, dan interface. Modifier private
+hanya bisa diberikan kepada member class.
+
+contoh
+
+class Person {
+	private String name;
+	
+	public void setName(String name){
+		this.name = name;
+	}
+
+	public String getName(){
+		return this.name;
+	}
+}
+
+pada contoh diatas, name dan public berakses modifier private
+
+apabila coba langsung mengakses atribut name, maka akan error
+
+Person mPerson = new Person();
+mPerson.name = "Risky"; //disini errornya
+
+Cara mengakses member private dari luar class?
+memakai method setter dan getter. Karena, method ini akan selalu
+diberikan modifier public
+
+contoh
+
+Person mPerson = new Person();
+mPerson.setName("Risky");
+
+System.out.println("Person Name: " + mPerson.getName());
+
+dilambangkan dengan tanda minus
+
+3. Protected (#)
+
+Modifier protected akan membuat member dan class hanya bisa diakses dari
+1. class itu sendiri
+2. sub class/class anak;
+3. package(kelas yang berada di satu package)
+
+modifier protected juga hanya boleh digunakan pada member saja.
+
+contoh
+
+package modifier;
+
+public class Person {
+	protected String name;
+
+	public void setName(String name){
+	this.name = name;
+	}
+
+	public String getName(){
+	return this.name;
+	}
+}
+
+apabila mengakses dari class yang satu package
+dengannya, tidak error, jika tidak berada dalam satu package, maka akan error.
+Protected class diagram dilambangkan dengan tanda pagar. #
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
